@@ -544,6 +544,10 @@
     transform: translate(0, -50%);
 }
 
+.main_services .dots {
+    display: none;
+}
+
 @media(max-width: 1024px) {
     .main_services .arrow {
         display: none;
