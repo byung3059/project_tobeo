@@ -1,0 +1,278 @@
+:root {
+    --pri-color: #885D3A;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --tit_des-color: #444444;
+}
+
+body {
+    color: var(--black-color);
+}
+
+.default,
+footer {
+    padding: 80px 0;
+}
+
+.inner {
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+.tit {
+    max-width: 1410px;
+    margin: 0 auto 40px auto;
+}
+
+.tit h2 {
+    text-align: center;
+    margin: 0 0 24px 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.tit p {
+    color: var(--black-color);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.tit h2 span {
+    color: var(--pri-color);
+}
+
+.btn_w a {
+    position: relative;
+    z-index: 9;
+    margin: 0 auto;
+    display: block;
+    padding: 0 0;
+    width: 210px;
+    line-height: 56px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.btn_w a:hover {
+    color: var(--black-color);
+    transition: 0.5s;
+}
+
+.btn_w a::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    bottom: 0;
+    width: 0%;
+    background: var(--white-color);
+
+    transition: 0.5s;
+}
+
+.btn_w a:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+
+.btn_b a {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    padding: 0 0;
+    width: 210px;
+    line-height: 56px;
+    color: #444;
+    border: 1px solid #ddd;
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn_b a:hover {
+    color: var(--white-color);
+    transition: 0.5s;
+}
+
+.btn_b a::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    bottom: 0;
+    width: 0%;
+    background: #444;
+
+    transition: 0.5s;
+}
+
+.btn_b a:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.sub_visual {
+    position: relative;
+    height: 600px;
+}
+
+.sub_visual .slg {
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub_visual .slg h2 {
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+@media(max-width: 1530px) {
+    .inner {
+        padding: 0 60px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .inner {
+        padding: 0 30px;
+    }
+
+    .tit {
+        margin: 0 auto 32px auto;
+        padding: 0 30px;
+    }
+
+    .tit h2 {
+        margin: 0 0 16px 0;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .tit p {
+        color: var(--black-color);
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .btn_w a {
+        width: 160px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+    .btn_b a {
+        width: 160px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+    .sub_visual {
+        height: 50vh;
+    }
+
+    .sub_visual .slg h2 {
+        font-size: 32px;
+        line-height: 32px;
+        color: var(--white-color);
+        font-weight: 700;
+    }
+}
+
+@media(max-width:769px) {
+    .inner {
+        padding: 0 16px;
+    }
+
+    .tit {
+        padding: 0 16px;
+    }
+
+    .tit h2 {
+        margin: 0 0 12px 0;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .tit p {
+        color: var(--black-color);
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .default,
+    .footer {
+        padding: 60px 0;
+    }
+
+    .sub_visual .slg h2 {
+        font-size: 28px;
+        line-height: 28px;
+        color: var(--white-color);
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 480px) {
+    .tit {
+        margin: 0 auto 24px auto;
+    }
+
+    .tit h2 {
+        margin: 0 0 12px 0;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .tit p {
+        color: var(--black-color);
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .btn_w a {
+        width: 120px;
+        line-height: 32px;
+        font-size: 14px;
+    }
+
+    .btn_b a {
+        width: 120px;
+        line-height: 32px;
+        font-size: 14px;
+    }
+
+    .default,
+    .footer {
+        padding: 40px 0;
+    }
+
+    .sub_visual .slg h2 {
+        font-size: 20px;
+        line-height: 20px;
+        color: var(--white-color);
+        font-weight: 700;
+    }
+}
