@@ -46,8 +46,9 @@ $(function () {
     // 메인서비스 //
     const main_services_slide = new Swiper('.main_services_slide', {
         loop: true,
-        slidesPerView: 1,
-        spaceBetween: 0,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 8,
 
         breakpoints: {
 
@@ -67,7 +68,12 @@ $(function () {
                 slidesPerView: 4,
                 spaceBetween: 30,
             },
-        }
+        },
+        pagination: {
+            el: '.main_services .dots',
+            clickable: true,
+        },
+
     });
 
     $('.main_services .arrow .prev').on('click', function () {
